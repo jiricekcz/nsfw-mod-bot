@@ -1,1 +1,1 @@
-# nsfw-mod-bot
+# NSFW Moderation Discord bot
