@@ -3,7 +3,7 @@ import path from "path";
 import fs from "fs";
 import types from "./types.d";
 import isNsfw from "./isNSFW";
-import { shouldDelete, shouldBan, update} from "./flagsManager";
+import { shouldDelete, shouldBan, update, getBanQuota, getDeleteQuota } from "./flagsManager";
 
 
 
@@ -23,6 +23,7 @@ client.on("message", async msg => {
     if (shouldBan(msg) && member.bannable) member.ban({
         reason: "This user has been banned because the amount of flagged messages by them has exceeded the quota."
     }); 
+    msg.author.send(`Hello, your message \`${msg.content}\` has been flagged by our NSFW/NSFL filter.\nViolating messages sent for automatic message deletion: \`${getDeleteQuota(msg)}\`\nViolating messages sent for automatic ban: \`${getBanQuota(msg)}\``)
     console.log("Message has been flagged.");
 });
 

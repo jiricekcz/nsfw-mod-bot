@@ -16,3 +16,9 @@ export function shouldDelete(msg: Discord.Message): boolean {
 export function shouldBan(msg: Discord.Message): boolean {
     return flags[msg.author.id] >= settings.flagsForBan;
 }
+export function getBanQuota(msg: Discord.Message): string {
+    return `${flags[msg.author.id]} / ${settings.flagsForBan}`;
+}
+export function getDeleteQuota(msg: Discord.Message): string {
+    return `${flags[msg.author.id]} / ${settings.flagsForDeletion}`;
+}
