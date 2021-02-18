@@ -1,0 +1,25 @@
+{
+  "name": "nsfw-mod-bot",
+  "version": "1.0.0",
+  "description": "NSFW Moderation Discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiricekcz/nsfw-mod-bot.git"
+  },
+  "author": "jiricekcz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jiricekcz/nsfw-mod-bot/issues"
+  },
+  "homepage": "https://github.com/jiricekcz/nsfw-mod-bot#readme",
+  "dependencies": {
+    "@types/node": "^14.14.28",
+    "discord.js": "^12.5.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5"
+  }
+}

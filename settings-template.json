@@ -1,0 +1,5 @@
+{
+    "threshold": "[INSERT a number between 0 and 1, that represents the AI NSFW detection threshold]",
+    "flagsForDeletion": "[INSERT a number that represents the amount of flags needed to delete users messages]",
+    "flagsForBan": "[INSERT a number that represents the amount of flags needed to ban the user]"
+}
